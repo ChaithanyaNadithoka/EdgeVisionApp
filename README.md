@@ -11,7 +11,7 @@
 ## 🎯 Project Overview
 
 
-EdgeVisionApp is an R&D Android application that captures live video using Camera2 API, processes each frame using C++ (OpenCV via JNI), and renders the output in real-time using OpenGL via GLSurfaceView.
+EdgeVisionApp is an Android application that captures live video using Camera2 API, processes each frame using C++ (OpenCV via JNI), and renders the output in real-time using OpenGL via GLSurfaceView.
 
 
 ✨ Features:
@@ -32,7 +32,7 @@ EdgeVisionApp is an R&D Android application that captures live video using Camer
 ---
 
 
-## 🧠 Architecture
+## 🧠 Directory Overview
 
 
 ```
@@ -113,6 +113,24 @@ EdgeVisionApp/
 - NDK + CMake installed
 
 - Android device (API 24+)
+
+---
+
+## 🧠 Architecture Overview
+
+```
+[Camera2 API]
+     ↓
+[TextureView Frame Callback]
+     ↓
+[Java ByteArray → JNI]
+     ↓
+[Native C++ OpenCV Processing]
+     ↓
+[Processed Mat → Java Bitmap]
+     ↓
+[Display in ImageView]
+```
 
 
 ### 🔧 Setup Instructions
