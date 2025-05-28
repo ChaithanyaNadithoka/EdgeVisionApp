@@ -99,6 +99,16 @@ EdgeVisionApp/
 
 ---
 
+## 🖼️ Screenshots
+
+| Raw Camera Feed | Edge Detection Output |
+|------------------|------------------------|
+| ![Raw](app/src/main/assets/Pro.jpg) | ![Edge](app/src/main/assets/Edge.jpg) |
+
+> 📌 These images are located in `app/src/main/assets` and used to demonstrate output frame rendering.
+
+---
+
 
 ## 🚀 How to Run
 
